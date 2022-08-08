@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    function max(array) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > array[i + 1]) {
+                let temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+        }
+
+        return array[array.length - 1];
+    }
+
+    let scores = [1, 2, 3, 4, 5];
+
+    let maxScore = max(scores);
+
+    document.write(maxScore);
+</script>
